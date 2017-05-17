@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 for i in *
 do
@@ -7,7 +7,6 @@ do
         touch $i/passed;
         for t in $i/*.in
         do
-            echo "Running test $t";
             output=$(../build/$i < $t);
             expectedfile="$(echo "$t" | cut -d'.' -f 1 -).out"
             expected=$(cat $expectedfile);
