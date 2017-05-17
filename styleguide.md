@@ -46,7 +46,7 @@ Classes are nice. Always make all members public. Always specify what members
 are supposed to be public and private. Don't use `virtual`.
 
 ```c++
-class {
+class Fenwick {
 public:
   Fenwick(ul size);
   Fenwick(ul size) { ...implementation... };
@@ -55,7 +55,7 @@ public:
 //private:
   l cumulative_sum(ul begin) { ...implementation... };
   vector<l> data;
-}
+};
 ```
 
 ## Const
